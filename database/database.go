@@ -7,7 +7,7 @@ import (
 
 
 func InitDB() *sql.DB {
-	connectionString := "homestead:secret@tcp(localhost:3306)/northwind"
+	connectionString := "homestead:secret@tcp(192.168.10.10:3306)/northwind"
 	databaseConnection, err := sql.Open("mysql",connectionString)
 
 	if err != nil {
